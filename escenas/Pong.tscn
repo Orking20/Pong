@@ -1,0 +1,120 @@
+[gd_scene load_steps=4 format=3 uid="uid://b8gxuqj4yf3pk"]
+
+[ext_resource type="Texture2D" uid="uid://uvj1ghiaqxsf" path="res://assets/linea.png" id="1_5pc2u"]
+[ext_resource type="Texture2D" uid="uid://cfurar32il0c4" path="res://assets/paleta.png" id="2_bq3r6"]
+[ext_resource type="Texture2D" uid="uid://fi7wx5nbwujn" path="res://assets/pelota.png" id="3_8duiu"]
+
+[node name="Juego" type="Node2D"]
+
+[node name="Separadores" type="Node" parent="."]
+
+[node name="Separador1" type="Sprite2D" parent="Separadores"]
+position = Vector2(320, 11)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("1_5pc2u")
+
+[node name="Separador2" type="Sprite2D" parent="Separadores"]
+position = Vector2(320, 33)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("1_5pc2u")
+
+[node name="Separador3" type="Sprite2D" parent="Separadores"]
+position = Vector2(320, 55)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("1_5pc2u")
+
+[node name="Separador4" type="Sprite2D" parent="Separadores"]
+position = Vector2(320, 77)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("1_5pc2u")
+
+[node name="Separador5" type="Sprite2D" parent="Separadores"]
+position = Vector2(320, 99)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("1_5pc2u")
+
+[node name="Separador6" type="Sprite2D" parent="Separadores"]
+position = Vector2(320, 121)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("1_5pc2u")
+
+[node name="Separador7" type="Sprite2D" parent="Separadores"]
+position = Vector2(320, 143)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("1_5pc2u")
+
+[node name="Separador8" type="Sprite2D" parent="Separadores"]
+position = Vector2(320, 165)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("1_5pc2u")
+
+[node name="Separador9" type="Sprite2D" parent="Separadores"]
+position = Vector2(320, 187)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("1_5pc2u")
+
+[node name="Separador10" type="Sprite2D" parent="Separadores"]
+position = Vector2(320, 209)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("1_5pc2u")
+
+[node name="Separador11" type="Sprite2D" parent="Separadores"]
+position = Vector2(320, 231)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("1_5pc2u")
+
+[node name="Separador12" type="Sprite2D" parent="Separadores"]
+position = Vector2(320, 253)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("1_5pc2u")
+
+[node name="Separador13" type="Sprite2D" parent="Separadores"]
+position = Vector2(320, 275)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("1_5pc2u")
+
+[node name="Separador14" type="Sprite2D" parent="Separadores"]
+position = Vector2(320, 297)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("1_5pc2u")
+
+[node name="Separador15" type="Sprite2D" parent="Separadores"]
+position = Vector2(320, 319)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("1_5pc2u")
+
+[node name="Separador16" type="Sprite2D" parent="Separadores"]
+position = Vector2(320, 341)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("1_5pc2u")
+
+[node name="Separador17" type="Sprite2D" parent="Separadores"]
+position = Vector2(320, 363)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("1_5pc2u")
+
+[node name="Separador18" type="Sprite2D" parent="Separadores"]
+position = Vector2(320, 385)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("1_5pc2u")
+
+[node name="Separador19" type="Sprite2D" parent="Separadores"]
+position = Vector2(320, 407)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("1_5pc2u")
+
+[node name="Izquierda" type="Sprite2D" parent="."]
+position = Vector2(20, 200)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_bq3r6")
+
+[node name="Derecha" type="Sprite2D" parent="."]
+position = Vector2(620, 200)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_bq3r6")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(320, 200)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("3_8duiu")
