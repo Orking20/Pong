@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://xc7jfhlpcjr8"]
+
+[ext_resource type="Texture2D" uid="uid://fi7wx5nbwujn" path="res://assets/pelota.png" id="1_j3d31"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3iy1b"]
+radius = 9.0
+
+[node name="Bola" type="CharacterBody2D"]
+
+[node name="Colision" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_3iy1b")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("1_j3d31")

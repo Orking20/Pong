@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bhegi81i6bvwe"]
+
+[ext_resource type="Texture2D" uid="uid://cfurar32il0c4" path="res://assets/paleta.png" id="1_rielf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_umhgf"]
+size = Vector2(18, 56)
+
+[node name="Paleta" type="CharacterBody2D"]
+
+[node name="Colision" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_umhgf")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("1_rielf")
