@@ -23,11 +23,6 @@ public partial class Escenario : Node2D
 		this._velocidadPaleta = 150;
 	}
 
-	public override void _Process(double delta)
-	{
-		
-	}
-
     public override void _PhysicsProcess(double delta)
     {
         ManejarInput();

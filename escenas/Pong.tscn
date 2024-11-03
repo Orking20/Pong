@@ -1,12 +1,27 @@
-[gd_scene load_steps=5 format=3 uid="uid://b8gxuqj4yf3pk"]
+[gd_scene load_steps=7 format=3 uid="uid://b8gxuqj4yf3pk"]
 
 [ext_resource type="Texture2D" uid="uid://uvj1ghiaqxsf" path="res://assets/linea.png" id="1_5pc2u"]
 [ext_resource type="Script" path="res://scripts/Escenario.cs" id="1_y8rnh"]
 [ext_resource type="PackedScene" uid="uid://xc7jfhlpcjr8" path="res://escenas/Bola.tscn" id="3_5kld2"]
 [ext_resource type="PackedScene" uid="uid://bhegi81i6bvwe" path="res://escenas/Paleta.tscn" id="4_sy70s"]
 
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_xsb36"]
+b = Vector2(640, 0)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_h084u"]
+a = Vector2(-1, 400)
+b = Vector2(640, 400)
+
 [node name="Escenario" type="Node2D"]
 script = ExtResource("1_y8rnh")
+
+[node name="Pared" type="StaticBody2D" parent="."]
+
+[node name="ColisionArr" type="CollisionShape2D" parent="Pared" groups=["pared"]]
+shape = SubResource("SegmentShape2D_xsb36")
+
+[node name="ColisionAba" type="CollisionShape2D" parent="Pared" groups=["pared"]]
+shape = SubResource("SegmentShape2D_h084u")
 
 [node name="Separadores" type="Node" parent="."]
 
@@ -109,8 +124,8 @@ texture = ExtResource("1_5pc2u")
 z_index = 1
 position = Vector2(-32, -10)
 
-[node name="PaletaIzq" parent="." instance=ExtResource("4_sy70s")]
+[node name="PaletaIzq" parent="." groups=["paleta"] instance=ExtResource("4_sy70s")]
 position = Vector2(-96, -29)
 
-[node name="PaletaDer" parent="." instance=ExtResource("4_sy70s")]
+[node name="PaletaDer" parent="." groups=["paleta"] instance=ExtResource("4_sy70s")]
 position = Vector2(-64, -29)
